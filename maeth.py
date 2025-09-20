@@ -38,6 +38,13 @@ class advMath:
     class advadvMath:
         def root(num, root=2):
             return num**(1/root)
+        def reciprocal(num):
+            return 1/num
+        def tetration(base, trexponent):
+            if (trexponent==0):
+                return base
+            else:
+                return base ** advMath.advadvMath.tetration(base, trexponent-1)
     class perandarea:
         def squareper(side):
             return side*4
@@ -79,3 +86,19 @@ class advMath:
                 return sum(sides)
             def irregularshapearea(sides):
                 return advMath.perandarea.shapez.irregularshapeper(sides)*len(sides)
+            
+#THE CODE BELOW IS DEPRACTED, PLEASE DO NOT ADD IT
+"""
+class capacitor:
+    def __init__(self, info, arrayint=0):
+        self.info[arrayint] = info
+    def setcap(self, data, arrayint=0):
+        self.info[arrayint] = data
+        print("Capacitor info has changed!")
+    def empty(self, arrayint=0):
+        self.info[arrayint] = ""
+        print("Emptied!")
+    def returndata(self, arrayint=0):
+        return self.info[arrayint]
+"""
+    
