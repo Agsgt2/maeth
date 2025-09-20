@@ -101,4 +101,17 @@ class capacitor:
     def returndata(self, arrayint=0):
         return self.info[arrayint]
 """
-    
+
+class colors:
+    def __init__():
+        print("Color!!!")
+    black = 'black'
+    white = 'white'
+    red = 'red'
+    green = 'green'
+    blue = 'blue'
+    gray = '#888888'
+    orange = 'orange'
+    pureorange = '#FF8000'
+    green = 'green'
+    purple = 'purple'
